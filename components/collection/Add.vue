@@ -45,19 +45,18 @@
                     type="number"
                     class="p-4 mb-3 block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-300 sm:py-1.5 sm:text-sm sm:leading-6"
                   />
-                  <!-- <label />Date Of Birth
-                  <input
-                    v-model="employeeDOB"
-                    type="date"
-                    class="p-4 mb-3 block w-full rounded-md border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-300 sm:py-1.5 sm:text-sm sm:leading-6"
-                  /> -->
+                
                   <label for="test-type">Country</label>
                   <select
                     v-model="contacts.country"
                     class="block mb-3 px-3 rounded-md border-0 py-3 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-300 sm:text-sm sm:leading-6 w-[100%]"
                   >
                     <option selected value="">Please select Country</option>
-                                      </select>
+                    <option value="India">India</option>
+                  <option value="USA">USA</option>
+                  <option value="Pakisthan">Pakisthan</option>
+                  <option value="Afghanistan">Afghanistan</option>
+                   </select>
                 </div>
                 <div
                   class="mt-5 sm:mt-6 sm:grid sm:grid-flow-row-dense sm:grid-cols-2 sm:gap-3"
@@ -107,7 +106,7 @@ const contacts = {
   country: "",
  };
 
-const saveDataLocalStorage = () => {
+const saveLocalStorage = () => {
   emit("contacts", contacts);
 };
 </script>

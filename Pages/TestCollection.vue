@@ -1,3 +1,3 @@
 <template>
-  <CollectionsMain />
+  <CollectionMain />
 </template>

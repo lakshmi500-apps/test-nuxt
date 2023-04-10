@@ -2,7 +2,7 @@
     <button @click="addContacts">Add Contacts</button>
     <ul
       role="list"
-      class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 p-5 mt-[100px] bg-black"
+      class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 p-5 mt-[100px]"
     >
       <li
         v-for="(person, index) in contacts"
@@ -25,11 +25,7 @@
             </p>
           
           </div>
-          <img
-            class="h-10 w-10 flex-shrink-0 rounded-full bg-gray-300"
-            src="https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/7803/girl-taking-a-test-clipart-xl.png"
-            alt=""
-          />
+         
         </div>
         <div>
           <div class="-mt-px flex divide-x divide-gray-200">

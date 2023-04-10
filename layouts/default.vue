@@ -1,5 +1,5 @@
 <template>
-<CollectionAddContactMain
+<CollectionMain
  />
 </template>
     
